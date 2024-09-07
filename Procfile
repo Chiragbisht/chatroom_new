@@ -1,1 +1,2 @@
-web: gunicorn chatroom.wsgi:application
+
+gunicorn chatroom.wsgi:application
