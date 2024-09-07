@@ -1,1 +1,1 @@
-web: gunicorn chatroom.wsgi:application
+
