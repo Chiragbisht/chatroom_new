@@ -18,4 +18,4 @@ RUN python manage.py migrate
 RUN python manage.py collectstatic --noinput
 
 # Start the Django app using shell so that the environment variable PORT gets resolved
-CMD exec python manage.py runserver 0.0.0.0:${PORT:-8000}
+CMD ["sh", "-c", "python manage.py runserver 0.0.0.0:${PORT:-8000}"]
