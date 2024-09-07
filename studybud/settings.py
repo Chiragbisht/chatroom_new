@@ -28,6 +28,10 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://chatroom-os4ddry5.b4a.run',
+    # Add any other trusted origins here
+]
 
 
 # Application definition
